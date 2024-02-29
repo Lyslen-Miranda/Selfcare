@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+header {
+  background-color: #ffffff;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.logoDoSite {
+  width: 9%;
+  cursor: pointer;
+}
+.boxDeIconesDaHeader {
+  width: 10%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconesDaHeader {
+  width: 18%;
+  cursor: pointer;
+}
+.sectionInicio {
+  height: 55vh;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.sectionPromocao {
+  background-color: #ffffff;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-bottom: solid #e6e6e6 1px;
+}
+.sectionPromocao h1 {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 800;
+}
+.sectionPromocao p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.sectionProdutos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  align-items: start;
+}
+.boxDoProduto {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3% 4% 3% 4%;
+}
+.fotoDoProduto {
+  width: 100%;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  background-color: #5ca720;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+.overlay:hover {
+  opacity: 0.5;
+}
+.infoDoProduto {
+  font-size: 130%;
+  font-weight: 600;
+  margin-top: 4%;
+}
+span {
+  font-size: 130%;
+  color: #5ca720;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+button {
+  width: 55%;
+  height: 7.5vh;
+  border: none;
+  border-radius: 15px;
+  background-color: #5ca720;
+  color: #ffffff;
+  font-size: 110%;
+  font-weight: 700;
+  margin-top: 6%;
+  box-shadow: 1px 3px 3px #00000042;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #512200bd;
+}
+.sectionComDadosDoSite {
+  display: flex;
+  justify-content: center;
+  background-color: #fcfcfc;
+  border-top: solid #e6e6e6 1px;
+}
+.boxAgrupamentoDadosEinscricao {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 5vh;
+  cursor: pointer;
+}
+li:hover {
+  color: #5ca720;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+form {
+  width: 35vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vh;
+}
+input {
+  width: 28vw;
+  height: 8vh;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 0.5px;
+  border-color: #f3f3f3;
+}
+::placeholder {
+  color: #b8b8b8;
+  font-size: 18px;
+  font-weight: 600;
+}
+.buttonFormulario {
+  width: 11vw;
+  height: 8vh;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none;
+  margin-top: 0;
+}
+.sectionRedesSociaisEpagamentos {
+  background-color: #fcfcfc;
+  border-top: solid #e6e6e6 1px;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.boxDeRedesSociais {
+  width: 7%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconesRedesSociais {
+  width: 38%;
+  cursor: pointer;
+}
+.boxModosDePagamento {
+  width: 15%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logosCartoesDeCredito {
+  width: 28%;
+  cursor: pointer;
+}
+.logoPayPal {
+  width: 16%;
+  cursor: pointer;
+}
+@media (max-width: 1000px) and (min-width: 601px) {
+  header {
+    height: 13vh;
+  }
+  .logoDoSite {
+    width: 14%;
+  }
+  .boxDeIconesDaHeader {
+    width: 15%;
+  }
+  .sectionInicio {
+    height: 45vh;
+  }
+  .sectionPromocao {
+    height: 11vh;
+  }
+  .sectionPromocao h1 {
+    font-size: 17px;
+  }
+  .sectionPromocao p {
+    font-size: 16px;
+  }
+  .boxDoProduto {
+    width: 290px;
+  }
+  .fotoDoProduto {
+    width: 100%;
+  }
+  .overlay {
+    width: 290px;
+    height: 290px;
+  }
+  .infoDoProduto {
+    font-size: 120%;
+  }
+  ins {
+    font-size: 120%;
+  }
+  button {
+    width: 50%;
+    height: 6vh;
+    border-radius: 10px;
+    font-size: 105%;
+  }
+  .boxAgrupamentoDadosEinscricao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .boxInscricaoNewsletter {
+    margin-top: 6vh;
+  }
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 87vw;
+    margin-top: 2vh;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 3vh;
+    border-color: #dfdfdf;
+  }
+  ::placeholder {
+    font-size: 17px;
+  }
+  .buttonFormulario {
+    width: 100%;
+  }
+  .sectionRedesSociaisEpagamentos {
+    height: 13vh;
+  }
+  .boxDeRedesSociais {
+    width: 9%;
+    height: 13vh;
+  }
+  .iconesRedesSociais {
+    width: 40%;
+  }
+  .boxModosDePagamento {
+    width: 17%;
+    height: 13vh;
+  }
+  .logosCartoesDeCredito {
+    width: 30%;
+  }
+  .logoPayPal {
+    width: 18%;
+  }
+}
+@media (max-width: 600px) and (min-width: 201px) {
+  header {
+    height: 10vh;
+  }
+  .logoDoSite {
+    width: 24%;
+  }
+  .boxDeIconesDaHeader {
+    width: 20%;
+  }
+  .iconesDaHeader {
+    width: 20%;
+  }
+  .sectionInicio {
+    height: 25vh;
+  }
+  .sectionPromocao {
+    height: 10vh;
+  }
+  .sectionPromocao h1 {
+    font-size: 15px;
+  }
+  .sectionPromocao p {
+    font-size: 14px;
+  }
+  .boxDoProduto {
+    margin: 6% 4% 6% 4%;
+  }
+  .boxDoProduto {
+    width: 280px;
+  }
+  .fotoDoProduto {
+    width: 100%;
+  }
+  .overlay {
+    width: 280px;
+    height: 280px;
+  }
+  .infoDoProduto {
+    font-size: 110%;
+  }
+  ins {
+    font-size: 110%;
+  }
+  button {
+    width: 45%;
+    height: 6vh;
+    border-radius: 10px;
+    font-size: 100%;
+  }
+  .boxAgrupamentoDadosEinscricao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  li {
+    font-size: 17px;
+    line-height: 4.5vh;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  .boxInscricaoNewsletter {
+    margin-top: 6vh;
+  }
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 89vw;
+    margin-top: 2vh;
+  }
+  input {
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 2vh;
+    border-color: #dfdfdf;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  .buttonFormulario {
+    width: 100%;
+    height: 6vh;
+  }
+  .sectionRedesSociaisEpagamentos {
+    height: 10vh;
+  }
+  .boxDeRedesSociais {
+    width: 16%;
+    height: 10vh;
+  }
+  .iconesRedesSociais {
+    width: 40%;
+  }
+  .boxModosDePagamento {
+    width: 35%;
+    height: 10vh;
+  }
+  .logosCartoesDeCredito {
+    width: 30%;
+  }
+  .logoPayPal {
+    width: 20%;
+  }
+}
